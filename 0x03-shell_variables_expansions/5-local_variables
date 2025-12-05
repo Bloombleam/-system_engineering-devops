@@ -1,2 +1,8 @@
 #!/bin/bash
-echo "Total variables: $(set | grep -c '^[a-zA-Z_][a-zA-Z0-9_]*=')"
+print_header() {
+    echo ""
+    echo "========================================"
+    echo "$1"
+    echo "========================================"
+    echo ""
+}
